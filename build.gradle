@@ -1,0 +1,18 @@
+plugins {
+    id 'java'
+}
+
+group 'org.voyager'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.seleniumhq.selenium:selenium-java:4.3.0'
+}
+
+test {
+    useJUnitPlatform()
+}
