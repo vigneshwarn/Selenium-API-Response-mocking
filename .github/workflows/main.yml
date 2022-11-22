@@ -4,7 +4,7 @@ jobs:
   gradle-rc:
     runs-on: ubuntu-latest
     steps:
-       - name: Gc Buil
+       - name: Gc Build
          uses: gradle/gradle-build-action@v2.3.3
-       - run: ls -l
+       - run: ls -R
    
