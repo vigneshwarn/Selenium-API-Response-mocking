@@ -4,7 +4,15 @@ jobs:
   gradle-rc:
     runs-on: ubuntu-latest
     steps:
-       - name: Gc Build
+       - name: Step 1 - Checkout 
+         uses: actions/checkout@v2.5.0
+       - name: Setup 2 - Java JDK
+         uses: actions/setup-java@v3.6.0
+         with:
+            java-version: 11
+       - name: Step 3 - gradle run
          uses: gradle/gradle-build-action@v2.3.3
-       - run: ls -R
+         with:
+          arguments: build
+         
    
