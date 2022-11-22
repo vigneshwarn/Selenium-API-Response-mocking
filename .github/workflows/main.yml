@@ -17,7 +17,7 @@ jobs:
           arguments: build
        - name: Command Runner
          run: |
-              cd ./build
+              cd ./build/libs
               ls -R
          
    
