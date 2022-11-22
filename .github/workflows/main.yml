@@ -16,6 +16,8 @@ jobs:
          with:
           arguments: build
        - name: Command Runner
-         run: ls -R
+         run: |
+              cd ./build
+              ls -R
          
    
